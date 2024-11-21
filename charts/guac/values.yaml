@@ -522,3 +522,24 @@ minio:
     - accessKey: accessKey
       secretKey: secretKey
       policy: readwrite
+
+atlas:
+  enabled: true
+  image:
+    repository: ghcr.io/guacsec/guac
+    # if not set appVersion field from Chart.yaml is used
+    # tag:
+    # When digest is set to a non-empty value, images will be pulled by digest (regardless of tag value).
+    digest: ""
+    pullPolicy: IfNotPresent
+
+  dbAddress: ""
+  name: atlas-migration
+  command:
+    [
+      "atlas",
+      "migrate",
+      "apply",
+      "--dir file:///app/migrations",
+      "--url 'postgress://host:port/dbname?sslmode=false'",
+    ]
