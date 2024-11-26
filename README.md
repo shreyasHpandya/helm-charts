@@ -19,6 +19,6 @@ You can then run `helm search repo kusaridev` to see the charts.
 
 The source code of all [Kusari](https://kusari.dev) [Helm](https://helm.sh) charts can be found on Github: <https://github.com/kusaridev/helm-charts/>
 
-<!-- Keep full URL links to repo files because this README syncs from main to gh-pages.  -->
+<!-- Keep full URL links to repo files because this README syncs from main to gh-pages .  -->
 ## Helm charts build status
 ![Release Charts](https://github.com/kusaridev/helm-charts/actions/workflows/release.yaml/badge.svg)
