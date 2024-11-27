@@ -106,8 +106,8 @@ data:
         export GUACSEC_HOME="/guac"
 
         apt-get update && apt-get install -y curl
-        curl -L https://github.com/guacsec/guac/releases/latest/download/guacone-linux-amd64 -o /tmp/guacone
-        curl -L https://github.com/guacsec/guac/releases/latest/download/guaccollect-linux-amd64 -o /tmp/guaccollect
+        curl -L https://github.com/guacsec/guac/releases/v0.8.0/download/guacone-linux-amd64 -o /tmp/guacone
+        curl -L https://github.com/guacsec/guac/releases/v0.8.0/download/guaccollect-linux-amd64 -o /tmp/guaccollect
         chmod +x /tmp/guacone /tmp/guaccollect
 
         while [ ! -f ${INDICATOR_FILE} ]

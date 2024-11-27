@@ -524,7 +524,7 @@ minio:
       policy: readwrite
 
 atlas:
-  enabled: true
+  enabled: false
   image:
     command: ['sh', '-c', 'atlas migrate apply --dir file:///app/migrations --url $DB_ADDRESS']
     repository: ghcr.io/guacsec/guac/atlas-migration
