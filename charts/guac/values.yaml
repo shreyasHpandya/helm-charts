@@ -166,6 +166,8 @@ imagePullSecrets:
 ## @param guac.blobAddr [nullable] gocloud connection string for blob store configured via https://gocloud.dev/howto/blob/
 ## @param guac.additionalResources
 
+commonLabels: {}
+
 guac:
 
   guacImage:
